@@ -23,16 +23,10 @@ function popElement(arr){
 }
 
 //https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript?fbclid=IwAR3o1GORcRVvcvwUoDTJbyIiKiR6EEWPGhNi4BkegWRNVV6jSFNfwt47NWk
+
 class SmallestIntegerFinder {
-  findSmallestInt(args) {
-    var count  ;
- 
-    for (var i=0;i<args.length;i++){
-        if(args[i]<=args[0]){
-            args[0]  = args[i];    
-            count = args[i];
-        }
-      }
-    return count;
+  findSmallestInt(args) {   
+    return Math.min(...args)
   }
 }
+
